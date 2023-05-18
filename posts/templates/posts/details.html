@@ -1,0 +1,31 @@
+{% extends "main/base.html" %}
+{% block title %}Szczegóły posta{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col"></div>
+    <div class="col-8">
+        <div class="card">
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h5 class="card-title">{{post.title}}</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">
+                            Data utworzenia: {{post.created}}</h6>
+                        <p class="card-text">{{post.content}}</p>
+
+                    </li>
+                    <li class="list-group-item">Opublikowany: {{post.published}}</li>
+                    <li class="list-group-item">Data modyfikacji: {{post.modified}}</li>
+                    <li class="list-group-item">
+                        <a href="{% url 'posts:list' %}">Powrót do listy postów</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col"></div>
+</div>
+
+
+{% endblock %}
+

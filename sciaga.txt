@@ -1,0 +1,35 @@
+# Instalacja django
+pip install django==3.2.19
+# start projektu
+django-admin startproject pywww
+# dodanie aplikacji
+python manage.py startapp pywww
+# uruchomienie aplikacji
+python manage.py runserver
+# cała konfiguracja
+python manage.py diffsettings --all
+
+# przygotowanie migracji
+python manage.py makemigrations
+# przeglądanie migracji
+python manage.py showmigrations
+# wykonanie migracji
+python manage.py migrate
+# dodanie superusera
+python manage.py createsuperuser
+
+# rozszerzona konsola django:
+pip install django_extensions
+pip install ipython
+
+python manage.py shell_plus
+
+
+Nowa Aplikacja:
+1. Dodać aplikację przez manage.py
+2. Dodać routing: wpis w głównych urls.py i nowy plik urls.py w podkatalogu
+3. Dodać model
+4. Wykonać migracje
+5. Dodać model do PA
+6. Dodać widok
+7. Dodać szablon z podkatalogami

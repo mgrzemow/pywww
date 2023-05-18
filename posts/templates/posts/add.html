@@ -1,0 +1,37 @@
+{% extends "main/base.html" %}
+{% block title %}Dodawanie posta{% endblock %}
+{% block content %}
+<form method="post">
+{% csrf_token %}
+<div class="row">
+    <div class="col"></div>
+    <div class="col-8">
+        <div class="card">
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <input type="text" name="title">
+                    </li>
+                    <li class="list-group-item">
+                        <textarea name="content"></textarea>
+                    </li>
+                    <li class="list-group-item">
+                    <input type="checkbox" class="form-check-input" id="addChecked" name="published">
+                    <label class="form-check-label" for="addChecked">Opublikowany</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="submit" value="Dodaj">
+                    </li>
+                    <li class="list-group-item">
+                        <a href="{% url 'posts:list' %}">Powrót do listy postów</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col"></div>
+</div>
+</form>
+
+{% endblock %}
+

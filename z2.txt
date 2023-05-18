@@ -1,0 +1,12 @@
+1. Utwórz nową aplikację - books. A w niej model Book.
+ Książka powinna mieć przynajmniej takie pola jak 
+ title, description, available, publication_year, author. 
+ Możesz dodać inne ważne dla Ciebie pola. 
+2. Nie zapomnij dodać aplikacji do INSTALLED_APPS. 
+3. Przygotuj i wykonaj migracje. (makemigrations, migrate)
+4. Dodaj nowy model do PA. 
+5. Utwórz jakąś książkę albo i dwie. Postaraj się jakąś zmodyfikować. Usuń książkę. 
+6. Utwórz widok, który po wejściu na adres http://127.0.0.1/books/
+   W ramach widoku wypiszemy listę książek przekazanych w kontekście.
+7. Tu będzie moja biblioteka
+8. Nie zapomnij o routingu w ramach aplikacji books

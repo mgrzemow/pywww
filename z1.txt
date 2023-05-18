@@ -1,0 +1,5 @@
+1. Dodać sronę w ramach aplikacji main:
+ścieżka: /kontakty
+zawartość dowolna:
+tel: 222333444
+email: ala@ala.pl
